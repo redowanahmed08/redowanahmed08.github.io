@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .open-sans-normal {
     font-family: "Open Sans", sans-serif;
@@ -15,6 +18,10 @@
     color: #FD6E0A;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .bg-primary {
     background-color: #FFF8F3;
 }
@@ -29,6 +36,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #757575;
+    margin-bottom: 80px;
 }
 
 .dark-2 {
@@ -40,6 +48,11 @@
 main {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+main section {
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 
 /* nav styles */
@@ -74,19 +87,32 @@ nav li a {
     background-color: #FD6E0A;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     padding: 15px 30px;
     cursor: pointer;
 }
 
+.btn-2 {
+    background-color: transparent;
+    color: #FD6E0A;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 2px solid #FD6E0A
+}
+
 /* header-img */
 
 .header-img {
-    background-image: url(../images/developer.png) , url(../images/header_bg.png);
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
-    background-position: top left , bottom right;
+    background-position: top left, bottom right;
+    background-size: 92px, 750px 550px;
 }
 
 /* banner styles */
@@ -104,11 +130,13 @@ nav li a {
 .banner-greetings {
     font-size: 25px;
     font-weight: 480;
+    margin-top: 100px
 }
 
 .banner-title {
     font-size: 45px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .banner-pic {
@@ -118,8 +146,7 @@ nav li a {
 /* about section styles */
 
 .about {
-    border-radius: 10px;
-    margin-top: 130px;
+    border-radius: 15px;
     padding: 130px 150px;
     text-align: center;
 }
@@ -131,4 +158,150 @@ nav li a {
 
 .item-descrip {
     font-weight: 600;
+}
+
+/* skills section start */
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skills-descrip {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 60px;
+}
+
+.skill {
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px #0000000F;
+    border-radius: 10px;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FD6E0A;
+    border-radius: 10px; 
+}
+
+/* resume section styles */
+
+.resume-container {
+    display: flex;
+    gap: 24px;
+}
+
+.experience-descrip, .experience-subtitle {
+    color: #757575;
+}
+
+.experience-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.experience-title {
+    font-size: 18px;
+    font-weight: 680;
+    margin-bottom: 5px;
+}
+
+.resume-column-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.resume-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 60px;
+}
+
+.resume hr {
+    margin: 35px 0px;
+    opacity: 0.5;
+    border: 1px solid #D1D1D1;
+
+}
+
+.download-cv {
+    margin-bottom: 50px;
+}
+
+/* footer styles */
+
+footer {
+    padding: 100px 200px;
+    display: flex;
+    gap: 100px;   
+}
+
+.footer-column {
+    width: 50%;
+}
+
+footer input[type="text"] , input[type="email"]{
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    display: block;
+    color: #757575;
+    width: 100%;
+    padding: 12px 22px;
+    margin-bottom: 24px;
+    outline: none;
+    font-size: 14px;
+}
+
+footer textarea {
+    height: 170px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    display: block;
+    color: #757575;
+    width: 100%;
+    padding: 12px 22px;
+    margin-bottom: 24px;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+}
+
+.footer-descrip {
+    font-size: 14px;
+    font-weight: 400;
+    color: #474747
+}
+
+.copy{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+p small a {
+    text-decoration: none;
+    color: #FD6E0A;
+    margin-top: 10px;
+    
+}
+
+p small {
+    font-size: 16px;
 }
