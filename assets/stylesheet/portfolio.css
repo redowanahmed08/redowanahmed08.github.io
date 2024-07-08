@@ -112,7 +112,7 @@ nav li a {
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-    background-size: 92px, 750px 550px;
+    background-size: 92px, 700px ;
 }
 
 /* banner styles */
